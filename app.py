@@ -32,9 +32,11 @@ def reflect_on_experience(text: str) -> str:
 
     Your task, in **one response**, is to:
 
-    1. Estimate a **soft, symbolic rarity number** for this experience (e.g., "about 1 in 50 people", "fewer than 1 in 10,000"). This is not exact statistics — it should give the reader a sense of how uncommon the experience is.  
-    2. Provide a **short breakdown / explanation** of why this number is reasonable (1–2 sentences).  
-    3. Provide **2–3 short upbeat, reflective lines** celebrating the experience and encouraging the reader to continue seeking meaningful experiences.
+    1. Provide a short title for this experience
+    2. Estimate a **soft, symbolic rarity number** for this experience (e.g., "about 1 in 50 people", "fewer than 1 in 10,000"). This is not exact statistics — it should give the reader a sense of how uncommon the experience is.  
+    3. Provide a **short breakdown / explanation** of why this number is reasonable (1–2 sentences).  
+    4. Provide **2–3 short upbeat, reflective lines** celebrating the experience and encouraging the reader to continue seeking meaningful experiences.
+    5. Provide an image that reflects the emotional essence of this experience, keep it abstract, no real people, faces etc. 
 
     Tone:
     - Warm, celebratory, human
@@ -46,6 +48,7 @@ def reflect_on_experience(text: str) -> str:
 
     Input: "Learnt to play the piano"
     Output:
+    Title: "The Beginning of a perfect note!"
     Soft rarity: "Only about 1 in 100 people learn to play the piano in their lifetime."
     Explanation: Piano is a widely loved instrument, but relatively few dedicate the time to become proficient.
     Reflection:
@@ -54,6 +57,7 @@ def reflect_on_experience(text: str) -> str:
 
     Input: "Climbed Mount Everest"
     Output:
+    Title: "The Pinnacle of hard work and growth!"
     Soft rarity: "Fewer than 1 in 10,000 people have ever stood atop Everest."
     Explanation: Everest is extremely difficult to climb and only a tiny fraction of people attempt it each year.
     Reflection:
@@ -61,7 +65,7 @@ def reflect_on_experience(text: str) -> str:
     Let this rare triumph fuel even bolder adventures in 2026!
 
     Now, using this format, generate the **soft rarity, explanation, and 2–3 line upbeat reflection** for the experience above.
-    Don't display headers like soft rarity, explanation - just these 2-3 lines as one cohesive paragraph is sufficient.
+    Don't display headers like title, soft rarity, explanation - just these 2-3 lines as one cohesive paragraph is sufficient.
     For responses that are very commonplace, 1 in 10 or more, ignore the numbers and focus on how it is still a big deal.
     """
     response = client.chat.completions.create(
