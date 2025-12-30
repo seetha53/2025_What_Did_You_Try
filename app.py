@@ -120,4 +120,4 @@ if st.button("There you go!"):
 
         except Exception as e:
             st.error("Something unexpected went wrong.")
-            st.write("<h3>str(e)</h3>")
+            st.write(str(e))
