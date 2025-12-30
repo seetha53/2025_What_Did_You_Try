@@ -32,11 +32,10 @@ def reflect_on_experience(text: str) -> str:
 
     Your task, in **one response**, is to:
 
-    1. Provide a short title for this experience
+    1. Provide a short title for this experience in a separate line
     2. Estimate a **soft, symbolic rarity number** for this experience (e.g., "about 1 in 50 people", "fewer than 1 in 10,000"). This is not exact statistics — it should give the reader a sense of how uncommon the experience is.  
     3. Provide a **short breakdown / explanation** of why this number is reasonable (1–2 sentences).  
     4. Provide **2–3 short upbeat, reflective lines** celebrating the experience and encouraging the reader to continue seeking meaningful experiences.
-    5. Provide an image that reflects the emotional essence of this experience, keep it abstract, no real people, faces etc. 
 
     Tone:
     - Warm, celebratory, human
@@ -110,6 +109,8 @@ if st.button("There you go!"):
         try:
             reflection = reflect_on_experience(experience)
             st.write(reflection)
+            st.image("images/Happy Experiences, 2026!.jpg", use_column_width=True)
+
 
         except OpenAIError:
             st.error(
