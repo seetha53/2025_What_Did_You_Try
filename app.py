@@ -109,7 +109,7 @@ if st.button("There you go!"):
         try:
             reflection = reflect_on_experience(experience)
             st.write(reflection)
-            st.image("images/Happy Experiences, 2026!.jpg", use_column_width=True)
+            st.image("images/experiences.jpg", width=True)
 
 
         except OpenAIError:
