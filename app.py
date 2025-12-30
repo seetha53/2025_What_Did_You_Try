@@ -109,8 +109,8 @@ if st.button("There you go!"):
         try:
             reflection = reflect_on_experience(experience)
             st.write(reflection)
-            st.image("images/experiences.jpg", width=True)
-
+            with st.container():
+                st.image("images/experiences.jpg", width=300)
 
         except OpenAIError:
             st.error(
