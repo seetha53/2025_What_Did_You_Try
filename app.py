@@ -80,7 +80,7 @@ def reflect_on_experience(text: str) -> str:
 # STREAMLIT UI
 # --------------------------------------------------
 
-st.set_page_config(page_title="What did you try in 2025?", page_icon="🎉")
+st.set_page_config(page_title="Goodbye, 2025!", page_icon="🎉")
 
 st.markdown("<h2 style='text-align: center; color: #4CAF50;'>🎉 Tell me one thing you did this year that you loved doing.</h2>", unsafe_allow_html=True)
 
